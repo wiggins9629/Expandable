@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <com.wiggins.expandable.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wiggins.expandable.widget.MoreLineTextView
+                android:id="@+id/tv_more_line_short"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding_small"
+                app:clickAll="true"
+                app:textColor="@color/red" />
+
+            <View style="@style/spaceLine" />
+
+            <com.wiggins.expandable.widget.expandable.ExpandableTextView
+                android:id="@+id/tv_expandable_short"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/blue"
+                app:allClickable="false"
+                app:contentTextColor="@color/blue"
+                app:isDisplayIcon="false"
+                app:maxCollapsedLines="4" />
+
+            <View style="@style/spaceLine" />
+
+            <com.wiggins.expandable.widget.MoreLineTextView
+                android:id="@+id/tv_more_line_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding_small"
+                app:clickAll="true"
+                app:textColor="@color/red" />
+
+            <View style="@style/spaceLine" />
+
+            <com.wiggins.expandable.widget.expandable.ExpandableTextView
+                android:id="@+id/tv_expandable_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:padding="@dimen/padding_small"
+                android:textColor="@color/blue"
+                app:allClickable="false"
+                app:contentTextColor="@color/blue"
+                app:isDisplayIcon="false"
+                app:maxCollapsedLines="4" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

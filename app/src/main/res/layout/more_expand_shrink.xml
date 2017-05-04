@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wiggins.expandable.widget.expandable.AlignTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal"
+        tools:text="..." />
+
+    <LinearLayout
+        android:id="@+id/ll_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expand"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_small" />
+
+        <ImageView
+            android:id="@+id/iv_expand"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/icon_green_arrow_down" />
+    </LinearLayout>
+</LinearLayout>

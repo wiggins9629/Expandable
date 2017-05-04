@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MoreTextStyle">
+        <!--内容大小-->
+        <attr name="textSize" format="dimension" />
+        <!--内容颜色-->
+        <attr name="textColor" format="color" />
+        <!--内容默认最大行数-->
+        <attr name="maxLine" format="integer" />
+        <!--展开/收起图标-->
+        <attr name="expandIcon" format="reference" />
+        <!--展开/收起动画执行时间-->
+        <attr name="durationMillis" format="integer" />
+        <!--可点击区域，默认展开/收起区域可点击-->
+        <attr name="clickAll" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <!--内容默认最大行数，超过隐藏-->
+        <attr name="maxCollapsedLines" format="integer" />
+        <!--展开/收起动画执行时间-->
+        <attr name="animDuration" format="integer" />
+        <!--展开图片-->
+        <attr name="expandDrawable" format="reference" />
+        <!--收起图片-->
+        <attr name="collapseDrawable" format="reference" />
+        <!--内容颜色-->
+        <attr name="contentTextColor" format="color" />
+        <!--内容大小-->
+        <attr name="contentTextSize" format="dimension" />
+        <!--收起/展开颜色-->
+        <attr name="collapseExpandTextColor" format="color" />
+        <!--收起/展开大小-->
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <!--收起文字-->
+        <attr name="textCollapse" format="string" />
+        <!--展开文字-->
+        <attr name="textExpand" format="string" />
+        <!--可点击区域，默认展开/收起区域可点击-->
+        <attr name="allClickable" format="boolean" />
+        <!--是否显示展开/收起图标，默认显示-->
+        <attr name="isDisplayIcon" format="boolean" />
+        <!--收起/展开位置，默认左边-->
+        <attr name="collapseExpandGrarity">
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+        <!--收起/展开图标位置，默认右边-->
+        <attr name="drawableGrarity">
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+    </declare-styleable>
+</resources>
